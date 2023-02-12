@@ -18,3 +18,7 @@ product = {'name': 'Samsung Galaxy S23', 'price': 80000, 'discount': 5}
 product['with_discount'] = discounted(product['price'], product['discount'])
 
 print(discounted(100, 5, max_discount=60))
+
+print(discounted(100, 5, max_discount=60))
+
+print(discounted(100, 5, max_discount=60))
