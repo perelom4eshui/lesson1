@@ -19,7 +19,18 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+user_age = int(input('Укажите свой возраст, пожалуйста:'))
+def age_to_action(age):
+    if age <= 6:
+        message = (f'Челик, тебе всего {age}! Тебе пора в садик')
+    elif age <=16:
+        message = (f'Чел, тебе уже {age}! Завтра в школу ))))')
+    elif age <=25:
+        message = (f'Дядя, тебе {age}! Нулевая пара в 8, соболезную') 
+    else:
+        message = (f'Старичок, ты прожил {age}, но энивэй утром на завод, выпей пива и спаточки')
+    return message
+print(age_to_action(user_age))
 
 if __name__ == "__main__":
     main()
